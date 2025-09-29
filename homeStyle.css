@@ -1,0 +1,259 @@
+/* fontgoogle{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar (chrome, safari, opera) */
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 95%;
+    position: fixed;
+    transition: top 0.3s;
+    /* Ensure the navabr stays on top of other content */
+    z-index: 1000;
+    padding: 10px 20px;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 100%); */
+}
+
+.navbar-text{
+    display: flex;
+    margin-top: 9px;
+}
+
+.navbar-logo img{
+    height: 120px;
+}
+
+.navbar-menu{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Text */
+
+.navbar-menu li{
+    margin-left: 20px;
+}
+
+.navbar-menu li a{
+    color: rgb(81, 180, 0);
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    transition: color 0.3s;
+}
+
+
+.navbar-menu .recent-page a{
+    color: #e00013;
+}
+
+.navbar-menu li a:hover{
+    color: #e00013;
+}
+
+/* Styling Button */
+.product-button{
+    background-color: transparent;
+    border: rgb(81, 180, 0) 2px solid;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: border 0.4s;
+    transition: color 0.37s;
+    text-align: center;
+    color: rgb(81, 180, 0);
+}
+
+.product-button:hover{
+    border: #e00013 2px solid;
+    color: #e00013;
+}
+
+/* Section 1 */
+.section1{
+    background-image: url('homeBanner1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+.main-title{
+    color: #ff1024;
+    text-align: center;
+    padding-top: 550px;
+    font-size: 5em;
+}
+
+/* Section 2 */
+.section2{
+    background-color: #1c1c1c;
+    height: 150px;
+}
+
+.section2 p{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.red-color{
+    color: #e00013;
+}
+
+.section3{
+    background-image: url('homeBanner2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 200px;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.content{
+    padding-top: 100px;
+    padding-right: 120px;
+}
+
+.content iframe{
+    width: 500px;
+    height: 320px;
+    border: none;
+}
+
+.content h2{
+    color: white;
+    text-transform: uppercase;
+    padding-left: 90px;
+}
+
+.yellow-text{
+    color: #DDFF0D;
+}
+
+.content img{
+    margin-left: 212px;
+    padding-top: 30px;
+    width: 100px;
+}
+
+.content p{
+    color: white;
+    margin-left: 198px;
+    padding-bottom: 30px;
+}
+
+.content a{
+    padding-left: 165px;
+}
+
+.content button{
+    background-color: #1c1c1c00;
+    border: #DDFF0D 2px solid;
+    margin-left: 2px;
+    color: white;
+    padding: 15px 20px 15px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 1s;
+    transition: color 0.7s;
+}
+
+.content button:hover{
+    background-color: white;
+    border: white 2px solid;
+    color: #1c1c1c;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: rgb(31,5,5);
+    background: linear-gradient(180deg, rgba(31,5,5,1) 0%, rgba(133,20,20,1) 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.footer-content button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 20px 10px 20px;
+    font-size: 30px;
+    border: #002B5B 2px solid;
+    background-color: #1c1c1c00;
+    color: white;
+    transition: color 0.5s;
+    transition: background-color 0.7s;
+}
+
+.footer-content button:hover{
+    border: #002B5B 2px solid;
+    background-color: #002B5B;
+    color: #FFDE00;
+}
+
+.socmed{
+    margin-top: 20px;
+}
+
+.socmed ul{
+    list-style: none;
+    display: flex;
+}
+
+.socmed li a{
+    font-size: 20px;
+    color: white;
+    font-style: none;
+    margin-left: 42px;
+    font-size: 40px;
+}
+
+.copyright{
+    padding-top: 50px;
+}
+
+.copy-img{
+    width: 200px;
+}
+
